@@ -224,6 +224,13 @@ if args.registerAtlasToSubjectSpace:
 output_polydata_s, cluster_numbers_s, color, embed = \
     wma.cluster.spectral_atlas_label(input_data, atlas, number_of_jobs=number_of_jobs)
 
+embed_fname = os.path.join(outdir, 'embeding.npy')
+clusterids_fname = os.path.join(outdir, 'cluster_ids.npy')
+color_fname = os.path.join(outdir, 'color.npy')
+np.save(embed, embed_fname)
+np.save(cluster_numbers_s, clusterids_fname)
+np.save(color, color_fname)
+
 # Write the polydata with cluster indices saved as cell data
 # print '<wm_cluster_atlas.py> Saving output whole brain cluster file in directory:', outdir
 # fname_output = os.path.join(outdir, 'clustered_whole_brain.vtp')
