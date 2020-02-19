@@ -4,6 +4,7 @@ import argparse
 import os
 import multiprocessing
 import time
+import numpy as np
 
 import vtk
 
