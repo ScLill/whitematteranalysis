@@ -229,9 +229,9 @@ def main():
     embed_fname = os.path.join(outdir, 'embeding.npy')
     clusterids_fname = os.path.join(outdir, 'cluster_ids.npy')
     color_fname = os.path.join(outdir, 'color.npy')
-    np.save(embed, embed_fname)
-    np.save(cluster_numbers_s, clusterids_fname)
-    np.save(color, color_fname)
+    np.save(embed_fname, embed)
+    np.save(clusterids_fname, cluster_numbers_s)
+    np.save(color_fname, color)
     
     # Write the polydata with cluster indices saved as cell data
     # print '<wm_cluster_atlas.py> Saving output whole brain cluster file in directory:', outdir
