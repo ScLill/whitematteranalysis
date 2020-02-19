@@ -157,7 +157,7 @@ def main():
         try:
             print("Writing output polydata", fname, "...")
             wma.io.write_polydata(wm3, fname)
-            print("Wrote output", fname, "."
+            print("Wrote output", fname, ".")
         except:
             print("Unknown exception in IO")
             raise
