@@ -18,7 +18,7 @@ except:
     print("<wm_laterality.py> Error importing joblib package\n")
     raise
 
-def main()
+def main():
     #-----------------
     # Parse arguments
     #-----------------
